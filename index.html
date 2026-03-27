@@ -7,16 +7,15 @@
   <meta name="description" content="India's First Digital Inheritance Advisory. Secure your digital assets — mutual funds, bank accounts, crypto, insurance — without ever sharing a single password.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="marg-icon1.png">
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <div class="container">
-      <a href="#" class="navbar-brand">
+      <a href="#hero" class="navbar-brand">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
         <span>LegacySync</span>
       </a>
@@ -26,7 +25,18 @@
         <a href="#services">Services</a>
         <a href="#trust">Trust &amp; Safety</a>
       </div>
-      <a href="#cta" class="btn btn-hero btn-hero-sm">Book a Free Check</a>
+      <a href="#cta" class="btn btn-hero btn-hero-sm nav-cta">Book a Free Check</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <svg id="menuIconOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="menuIconClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#problem" class="mobile-link">The Problem</a>
+      <a href="#solution" class="mobile-link">Our Approach</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#trust" class="mobile-link">Trust &amp; Safety</a>
+      <a href="#cta" class="btn btn-hero mobile-cta">Book a Free Check</a>
     </div>
   </nav>
 
@@ -156,13 +166,17 @@
           <p class="tier-price">₹2,999 <span>one-time</span></p>
           <p class="tier-desc">A focused session to identify gaps in your digital estate and create a clear action plan.</p>
           <ul class="tier-features">
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Complete digital asset inventory</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Nominee gap analysis</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Risk assessment report</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Prioritised action checklist</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 30-min follow-up call</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Complete digital asset inventory</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Nominee gap analysis</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Risk assessment report</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Prioritised action checklist</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>30-min follow-up call</li>
           </ul>
-          <a href="#cta" class="btn btn-default">Get Started <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          <!-- "Get Started" on Basic Audit → opens modal with Basic pre-selected -->
+          <a href="#" class="btn btn-default btn-full open-modal" data-service="basic">
+            Get Started
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
         </div>
         <div class="tier-card highlighted">
           <div class="tier-badge">Most Popular</div>
@@ -171,14 +185,18 @@
           <p class="tier-price">₹14,999 <span>one-time</span></p>
           <p class="tier-desc">End-to-end digital estate folder creation with hands-on family readiness training.</p>
           <ul class="tier-features">
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Everything in Basic Audit</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Platform-level legacy activation</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Sealed Digital Estate folder</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Family nominee training session</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Annual review (1st year free)</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Priority WhatsApp support</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Everything in Basic Audit</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Platform-level legacy activation</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Sealed Digital Estate folder</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Family nominee training session</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Annual review (1st year free)</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Priority WhatsApp support</li>
           </ul>
-          <a href="#cta" class="btn btn-hero">Get Started <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          <!-- "Get Started" on Full Legacy → opens modal with Full pre-selected -->
+          <a href="#" class="btn btn-hero btn-full open-modal" data-service="full">
+            Get Started
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
         </div>
       </div>
     </div>
@@ -189,8 +207,8 @@
     <div class="container">
       <div class="section-header">
         <p class="section-label">Trust &amp; Safety</p>
-        <h2 class="section-title" style="color: var(--primary-foreground);">Built on Trust, Not Access</h2>
-        <p class="section-desc">We are advisors, not custodians. Your security is our business model.</p>
+        <h2 class="section-title trust-title">Built on Trust, Not Access</h2>
+        <p class="section-desc trust-desc">We are advisors, not custodians. Your security is our business model.</p>
       </div>
       <div class="trust-grid">
         <div class="trust-card">
@@ -233,23 +251,102 @@
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section cta" id="cta">
+  <!-- CTA SECTION -->
+  <section class="section cta-section" id="cta">
     <div class="container">
-      <div class="section-header">
+      <div class="cta-inner">
         <h2 class="section-title">Take 15 Minutes Today. <span class="accent-text">Protect a Lifetime of Wealth.</span></h2>
-      </div>
-      <p class="cta-sub">Book a free, no-obligation Digital Health Check. We'll assess your current risk and show you exactly what your family would face — and how to fix it.</p>
-      <div class="cta-center">
-        <a href="#" class="btn btn-hero">
+        <p class="cta-sub">Book a free, no-obligation Digital Health Check. We'll assess your current risk and show you exactly what your family would face — and how to fix it.</p>
+        <!-- Main CTA button → opens booking modal -->
+        <a href="#" class="btn btn-hero cta-main-btn open-modal" data-service="">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           Book a Free 15-Minute Digital Health Check
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
-        <p class="cta-note">No credit card required · 100% confidential · Available in Hindi &amp; English</p>
+        <p class="cta-note">No credit card required &nbsp;·&nbsp; 100% confidential &nbsp;·&nbsp; Available in Hindi &amp; English</p>
       </div>
     </div>
   </section>
+
+  <!-- BOOKING MODAL -->
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-icon-wrap">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+      </div>
+      <h2 id="modalTitle">Book Your Free 15-Min Check</h2>
+      <p class="modal-subtitle">Fill in your details and we'll confirm your slot within 2 hours.</p>
+
+      <!-- Success state -->
+      <div class="modal-success" id="modalSuccess">
+        <div class="success-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3>You're all set!</h3>
+        <p>Thank you! We'll reach out within 2 hours to confirm your free session.</p>
+        <button class="btn btn-hero" id="modalSuccessClose">Done</button>
+      </div>
+
+      <!-- Form -->
+      <form class="modal-form" id="bookingForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" placeholder="e.g. Rahul Sharma" autocomplete="name">
+            <span class="field-error" id="fullNameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel">
+            <span class="field-error" id="phoneError"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="rahul@example.com" autocomplete="email">
+          <span class="field-error" id="emailError"></span>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="city">City *</label>
+            <select id="city" name="city">
+              <option value="">Select your city</option>
+              <option value="mumbai">Mumbai</option>
+              <option value="delhi">Delhi</option>
+              <option value="bangalore">Bangalore</option>
+              <option value="hyderabad">Hyderabad</option>
+              <option value="chennai">Chennai</option>
+              <option value="pune">Pune</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="field-error" id="cityError"></span>
+          </div>
+          <div class="form-group">
+            <label for="service">I'm interested in *</label>
+            <select id="service" name="service">
+              <option value="">Select a service</option>
+              <option value="basic">The Basic Audit — ₹2,999</option>
+              <option value="full">The Full Legacy Setup — ₹14,999</option>
+              <option value="unsure">Not sure yet</option>
+            </select>
+            <span class="field-error" id="serviceError"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Any specific concerns? <span class="optional">(optional)</span></label>
+          <textarea id="message" name="message" rows="3" placeholder="e.g. I have mutual funds, crypto, and insurance I'd like to cover..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-hero btn-submit" id="submitBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Confirm My Free Session
+        </button>
+        <p class="form-note">100% confidential &nbsp;·&nbsp; No credit card required</p>
+      </form>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -259,13 +356,24 @@
         <span>LegacySync</span>
       </div>
       <div class="footer-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Contact</a>
+        <a href="#" class="footer-modal-link" data-modal="privacy">Privacy Policy</a>
+        <a href="#" class="footer-modal-link" data-modal="terms">Terms of Service</a>
+        <a href="#" class="footer-modal-link" data-modal="contact">Contact</a>
       </div>
       <p class="footer-copy">© 2026 LegacySync. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- SIMPLE INFO MODAL for Privacy / Terms / Contact -->
+  <div class="modal-overlay info-overlay" id="infoOverlay" aria-hidden="true">
+    <div class="modal info-modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="infoClose" aria-label="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h2 id="infoTitle"></h2>
+      <div id="infoBody" class="info-body"></div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
