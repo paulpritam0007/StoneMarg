@@ -219,22 +219,53 @@
     if (!validateForm()) return;
 
     const submitBtn = document.getElementById('submitBtn');
+    const originalBtnHTML = submitBtn.innerHTML;
+    
+    // 1. Visual Feedback
     submitBtn.disabled = true;
-    submitBtn.textContent = 'Submitting…';
+    submitBtn.textContent = 'Submitting...';
 
-    // Simulate async submission (replace with real API call)
-    setTimeout(() => {
+    // 2. Prepare Data
+    const formData = new FormData(bookingForm);
+
+    // 3. Real AJAX Submission to Formspree
+    fetch(bookingForm.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        // 4. SUCCESS STATE
+        // Hide form and show success message
+        bookingForm.style.display = 'none';
+        modalSuccess.classList.add('show');
+        
+        // Reset form and errors
+        bookingForm.reset();
+        clearAllErrors();
+      } else {
+        // Handle server-side errors
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            alert(data["errors"].map(error => error["message"]).join(", "));
+          } else {
+            alert("Oops! There was a problem submitting your form.");
+          }
+        });
+      }
+    })
+    .catch(error => {
+      // Handle network errors
+      alert("Oops! There was a problem connecting to the server.");
+    })
+    .finally(() => {
+      // 5. Reset Button State
       submitBtn.disabled = false;
-      submitBtn.innerHTML = `
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        Confirm My Free Session`;
-
-      // Show success state
-      bookingForm.style.display = 'none';
-      modalSuccess.classList.add('show');
-      bookingForm.reset();
-      clearAllErrors();
-    }, 1200);
+      submitBtn.innerHTML = originalBtnHTML;
+    });
   });
 
 
